@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">    <!-- imposta la lingua  della pagina -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- Rende la pagina responsive impostando la larghezza uguale alla larghezza -->
+    <title>Download Report di Sostenibilità Fastweb</title>
+    <!-- Titolo della pagina che appare nella barra del browser -->  
+    <style>
+        /* Stile CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }   /* Resetta margini e padding predefiniti */
+
+        body {
+            font-family: Arial, sans-serif; /* Font  */
+            line-height: 1.6;
+        } /* Imposta lo stile generale del corpo della pagina */
+
+        .header {
+            position: relative;
+            height: 100vh;
+            background: url('/immagini/fibra-fastweb.jpg.webp') no-repeat center center/cover;
+        }             /* Imposta lo sfondo */
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+        }  /* Posiziona il contenuto al centro della sezione */
+
+        .container h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }     /* Stile per il titolo  */
+
+
+        .container p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }     /* Stile per il sottotitolo  */
+
+
+        .download-btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #ffcc00;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }   /* Stile per il pulsante di download */
+
+
+        .download-btn:hover {
+            background-color: #e6b800;
+        color:black;
+        }     /* cambio colore quando viene passato cursore */
+
+
+        footer {
+            background-color: #ffcc00;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: -4px; /* per evitare spazi */
+        }  /* Stile per la parte bassa della pagina  */
+
+
+        footer p {
+            font-size: 0.9rem;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Scopri il nostro impegno per la sostenibilità</h1>
+            <p>Scarica l'ultimo report di Fastweb e guarda come contribuiamo a un futuro più sostenibile.</p>
+            <a href="https://www.fastweb.it/corporate/azienda-e-sostenibilita/sostenibilita/Fastweb-Report-di-Sostenibilita-2023-it.pdf?v=2" 
+               download="Fastweb-Report-di-Sostenibilita-2023-it.pdf" class="download-btn">
+                Scarica il Report <i class="fas fa-download"></i>
+            </a>
+        </div>
+    </header>
+    <footer>
+        <p>© Fastweb S.p.A. - Contatti: info@fastweb.it | Telefono: 02 4545 5555</p>
+    </footer>
+</body>
+</html>
